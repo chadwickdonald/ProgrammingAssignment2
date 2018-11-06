@@ -24,6 +24,7 @@ makeCacheMatrix <- function(x = matrix()) {
   get <- function() { x }
   setsolve <- function(solve) { m <<- solve }
   getsolve <- function() { m }
+  list(set = set, get = get, setsolve = setsolve, getsolve = getsolve) 
 }
 
 
